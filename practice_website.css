@@ -1,0 +1,17 @@
+body {
+    background-color: darkgoldenrod;
+}
+
+.practiceUnit{
+    background-color: aqua;
+}
+
+#clock{
+    font-family: fantasy;
+    font-style: italic;
+    border: groove;
+    border-radius: 2vw;
+    font-size: 5vw ;
+    background-color: brown;
+    width: 50vw;
+}
