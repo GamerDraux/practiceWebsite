@@ -72,5 +72,55 @@ window.addEventListener("load", function(){
         return dollars;
     };
 
-    
+    //Date Unit=================================================================================
+    let dateBox =this.document.getElementById('date');
+    let currentDate = new Date();
+    currentDate = `${weekdayFromDateObject(currentDate)} the ${dateSuffixes(currentDate)} of ${monthFromDateObject(currentDate)}, ${currentDate.getFullYear()}`;
+    dateBox.innerHTML= currentDate;
+    function weekdayFromDateObject(dateObject){
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let weekday = days[dateObject.getDay()];
+        return weekday;
+    };
+    function monthFromDateObject(dateObject){
+        let months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let thisMonth = months[dateObject.getMonth()];
+        return thisMonth;
+    };
+    function dateSuffixes(date){
+        date=date.getDate();
+        switch (date){
+            case "1":
+                date=date+"st";
+                return date;
+                break;
+            case "2":
+                date=date+"nd";
+                return date;
+                break;
+            case "3":
+                date=date+"rd";
+                return date;
+                break;
+            case "21":
+                date=date+"st";
+                return date;
+                break;
+            case "22":
+                date=date+"nd";
+                return date;
+                break;
+            case "23":
+                date=date+"rd";
+                return date;
+                break;
+            case "31":
+                date=date+"st";
+                return date;
+                break;
+            default:
+                date=date+"th";
+                return date;
+        };
+    };
 });
