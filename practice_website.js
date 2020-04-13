@@ -125,11 +125,8 @@ window.addEventListener("load", function(){
 
     //Dropdown practice ----------------------------------
     let dropDownButton = this.document.getElementById('dropDownButton');
-    this.console.log(dropDownButton);
+
     let dropDownMenu = document.getElementById('dropDownMenu');
-    dropDownButton.addEventListener('mouseover', function(){
-        dropDownMenu.setAttribute("class", "show");
-    });
     dropDownButton.addEventListener('click', function(){
         if (dropDownMenu.getAttribute("class")==="show"){
             dropDownMenu.setAttribute("class", "hide");

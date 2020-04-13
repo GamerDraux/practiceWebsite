@@ -1,9 +1,16 @@
 body {
     background-color: darkgoldenrod;
     display: grid;
-    column-gap: .5vw;
+    column-gap: 1vw;
+    row-gap: 1vw;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+}
+
+#dateandtime {
+    border-style: groove;
+    border-radius: 2vw;
+    padding:.5vw;
 }
 
 .practiceUnit{
@@ -67,6 +74,8 @@ body {
 }
 
 #dropDownButton{
+    border-width: .5vw;
+    border-style: outset;
     font-size: 3vw;
     cursor:pointer;
 }
@@ -77,7 +86,8 @@ body {
 }
 
 .dropDownButton:hover, .dropDownButton:focus{
-    background-color: darkorange;
+    background-color: darkgrey;
+    border-radius: 1vw;
 }
 
 .hide{
@@ -95,4 +105,10 @@ body {
 
 .dropContent:hover{
     background-color: blanchedalmond;
+}
+
+#newBlock{
+    padding:1vw;
+    background-color: black;
+    color: lightcoral;
 }
