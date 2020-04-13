@@ -1,21 +1,49 @@
 body {
     background-color: darkgoldenrod;
     display: grid;
+    column-gap: .5vw;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .practiceUnit{
     background-color: aqua;
     border: groove;
-    border-radius: 2vw;
     box-shadow: 1vw 1vw 2vw;
 }
 
 #clock{
+    border-radius: 2vw;
     grid-auto-columns: auto;
     font-family: fantasy;
     font-style: italic;
     font-size: 6vw ;
     background-color: brown;
     width: auto;
+    height: 7vw;
+}
+
+#tipCalculator{
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+
+#tipCalculatorHeader{
+    text-align: center;
+    padding:.5vw;
+    background-color: gray;
+}
+
+#tipCalculatorInterior{
+    padding:1vw;
+}
+
+#tipResults{
+    padding: .5vw;
+    background-color: gray;
+    text-align: center;
+}
+
+#tipCalculatorButton{
+    text-align: center;
 }
