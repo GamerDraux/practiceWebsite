@@ -48,7 +48,6 @@ window.addEventListener("load", function(){
     let tipPerPersonResult = document.getElementById('tipPerPersonResult')
     let tipCalculatorButton = document.getElementById('tipCalculatorButton');
     tipCalculatorButton.addEventListener('click', function(){
-        console.log (mealAmount.value, serviceLevel.value, numOfPeople.value);
         if (serviceLevel.value==="2"){
             tipPerPersonResult.innerHTML ="Server gets 2&cent;"
         } else {
@@ -123,4 +122,19 @@ window.addEventListener("load", function(){
                 return date;
         };
     };
+
+    //Dropdown practice ----------------------------------
+    let dropDownButton = this.document.getElementById('dropDownButton');
+    this.console.log(dropDownButton);
+    let dropDownMenu = document.getElementById('dropDownMenu');
+    dropDownButton.addEventListener('mouseover', function(){
+        dropDownMenu.setAttribute("class", "show");
+    });
+    dropDownButton.addEventListener('click', function(){
+        if (dropDownMenu.getAttribute("class")==="show"){
+            dropDownMenu.setAttribute("class", "hide");
+        } else if (dropDownMenu.getAttribute("class")==="hide"){
+        dropDownMenu.setAttribute("class", "show");
+        };
+    });
 });

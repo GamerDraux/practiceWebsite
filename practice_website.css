@@ -57,3 +57,42 @@ body {
     background-color:rgb(43, 11, 102);
     text-align: center;
 }
+
+#dropDown{
+    background-color: greenyellow;
+    padding: 1vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#dropDownButton{
+    font-size: 3vw;
+    cursor:pointer;
+}
+
+#dropDownMenu{
+    margin-left:23%;
+    position: absolute;
+}
+
+.dropDownButton:hover, .dropDownButton:focus{
+    background-color: darkorange;
+}
+
+.hide{
+    display: none;
+}
+
+.show {
+    padding: .5vw;
+    font-size: 2.5vw;
+    border: groove;
+    background-color: grey;
+    display: show;
+    cursor: pointer;
+}
+
+.dropContent:hover{
+    background-color: blanchedalmond;
+}
