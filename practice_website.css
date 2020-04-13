@@ -8,14 +8,14 @@ body {
     background-color: aqua;
     border: groove;
     border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw;
 }
 
 #clock{
-    box-shadow: 1vw 1vw 2vw;
     grid-auto-columns: auto;
     font-family: fantasy;
     font-style: italic;
-    font-size: 5vw ;
+    font-size: 6vw ;
     background-color: brown;
     width: auto;
 }
