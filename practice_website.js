@@ -41,5 +41,36 @@ window.addEventListener("load", function(){
     
     runningClock();
 
+    //Tip calculator unit----------------------------------------------------------------------------------------
+    let mealAmount = document.getElementById('mealAmount');
+    let serviceLevel = document.getElementById('serviceLevel');
+    let numOfPeople = document.getElementById('numOfPeople');
+    let tipPerPersonResult = document.getElementById('tipPerPersonResult')
+    let tipCalculatorButton = document.getElementById('tipCalculatorButton');
+    tipCalculatorButton.addEventListener('click', function(){
+        console.log (mealAmount.value, serviceLevel.value, numOfPeople.value);
+        if (serviceLevel.value==="2"){
+            tipPerPersonResult.innerHTML ="Server gets 2&cent;"
+        } else {
+            tipPerPersonResult.innerHTML = "Each person needs to chip in:\n"+`${toDollarAmount((mealAmount.value*serviceLevel.value)/numOfPeople.value)}`;
+        }
+    });
+    function toDollarAmount(number){
+        function addZerosToCents(cents){
+            cents=cents.split(".");
+            if (cents.length===1){
+                cents.push("00");
+            };
+            if (cents[1].length===0){
+                cents[1]="00";
+            } else if(cents[1].length===1){
+                cents[1]=cents[1]+"0";
+            };
+            return cents.join('.');
+        }
+        dollars = addZerosToCents("$"+`${(Math.round(number*100)/100)}`);
+        return dollars;
+    };
 
+    
 });

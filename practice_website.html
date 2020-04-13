@@ -13,13 +13,13 @@
             <label>Meal Amount</label>
             <input id="mealAmount"><br>
             <label>How Was the service?</label>
-            <select type="selection">
-                <option value="great">Great Service! 30% Tip</option>
-               <option value="good">Good Service. 20%</option>
-               <option value="fair">Fair Service. 15%</option>
-               <option value="poor">Poor Service. 10%</option>
-               <option value="terrible">Terrible Service. 5%</option>
-               <option value="worstEver">Worst Ever Service. 2&cent;</option>
+            <select id="serviceLevel" type="selection">
+                <option value=".30">Great Service! 30% Tip</option>
+               <option value=".20">Good Service. 20%</option>
+               <option value=".15">Fair Service. 15%</option>
+               <option value=".10">Poor Service. 10%</option>
+               <option value=".05">Terrible Service. 5%</option>
+               <option value="2">Worst Ever Service. 2&cent;</option>
             </select><br>
             <label>How many people were eating?</label>
             <input id="numOfPeople">
@@ -28,7 +28,7 @@
             <button id="tipCalculatorButton">
                 Calculate!
             </button>
-            <p>
+            <p id="tipPerPersonResult">
                 Results will display here
             </p>
         </div>
